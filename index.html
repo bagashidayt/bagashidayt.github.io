@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-md-3">
       <div class="container">
         <a class="navbar-brand" href="#">Bagas Hidayat</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,7 +91,7 @@
               <div class="card-body">
                 <h5 class="card-title">FINAL PROJECT</h5>
                 <p class="card-text">Flow Assurance Analysis and Mitigation on Transport Pipelines from Waxy Oil Production Wells</p>
-                <a href="https://drive.google.com/file/d/10AZUQmQ-NkXWBF_V6kNvGefGe8D1dZmK/view?usp=sharing" target="_blank" class="btn btn-primary">Go to Link</a>
+                <a href="https://drive.google.com/file/d/10AZUQmQ-NkXWBF_V6kNvGefGe8D1dZmK/view?usp=sharing" target="_blank" class="btn btn-outline-primary rounded-0 float-end">View more</a>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@
                 <h5 class="card-title">RESEARCH BASED LEARNING</h5>
                 <p class="card-text">Designed batteries using materials that are cheap and easy to get but produced a lot of power
                 </p>
-                <a href="https://drive.google.com/file/d/18wKY5RqIz31Ua0xraKyRMyrw3821pPWo/view?usp=sharing" target="_blank" class="btn btn-primary">Go to Link</a>
+                <a href="https://drive.google.com/file/d/18wKY5RqIz31Ua0xraKyRMyrw3821pPWo/view?usp=sharing" target="_blank" class="btn btn-outline-primary rounded-0 float-end">View more</a>
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@
               <div class="card-body">
                 <h5 class="card-title">INTERNSHIP REPORT</h5>
                 <p class="card-text">Evaluation of the C-1 Fractionation Column Unit efficiency at Pusat Pengembangan Sumber Daya Manusia Minyak dan Gas Bumi</p>
-                <a href="https://drive.google.com/file/d/1E26B0AXD8MYEYfthCqw3E4bIypUhkp8D/view?usp=sharing" target="_blank" class="btn btn-primary">Go to Link</a>
+                <a href="https://drive.google.com/file/d/1E26B0AXD8MYEYfthCqw3E4bIypUhkp8D/view?usp=sharing" target="_blank" class="btn btn-outline-primary rounded-0 float-end">View more</a>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@
               <div class="card-body">
                 <h5 class="card-title">CAPSTONE DESIGN PROJECT</h5>
                 <p class="card-text">Preliminary Design of Titanium Dioxide Plant from Ilmenite with Capacity of 45000 Ton/Year</p>
-                <a href="https://drive.google.com/file/d/1dfnjtxc0Vl-Q8tNnKZg7Htmk8HI-rZxQ/view?usp=sharing" target="_blink" class="btn btn-primary">Go to Link</a>
+                <a href="https://drive.google.com/file/d/1dfnjtxc0Vl-Q8tNnKZg7Htmk8HI-rZxQ/view?usp=sharing" target="_blink" class="btn btn-outline-primary rounded-0 float-end">View more</a>
               </div>
             </div>
           </div>
@@ -205,6 +205,16 @@
           })
           .catch(error => console.error('Error!', error.message))
       })
+      
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
     </script>
   </body>
 </html>
