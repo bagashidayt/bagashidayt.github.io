@@ -131,23 +131,37 @@
     </div>
     <!-- akhir portfolio -->
 
-    <!-- awal kontak -->
-    <div class="container-fluid pt-5 pb-5 kontak">
-      <div class="container text-center">
-        <h2 class="display-3" id="Contact">Contact</h2>
-        <div class="row pb-3 justify-content-center">
-          <div class="col-md-8">
-            <input class="form-control form-control-lg mb-3" type="text" placeholder="Name" />
-            <input class="form-control form-control-lg mb-3" type="text" placeholder="Email" />
-            <input class="form-control form-control-lg mb-3" type="text" placeholder="Phone" />
-            <textarea class="form-control form-control-area" rows="7" placeholder="Message"></textarea>
+ <!-- contact -->
+<section id="Contact">
+  <div class="container">
+      <div class="row text-center mb-3">
+          <div class="col">
+              <h2>Contact Me</h2>
           </div>
-        </div>
-        <div class="col-md-3 mx-auto text-center">
-          <button type="button" class="btn btn-primary btn-lg">Send</button>  
-        </div>
       </div>
-    </div>
+      <div class="row justify-content-center">
+          <div class="col-md-8 pb-5">
+              <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+          </div>
+      </div>
+  </div>
+  <!-- Akhir contact -->
+
+  <!-- awal footer -->
     <footer class="bg-dark text-white text-center pt-2 pb-2">
       <p>Created by <a href="https://www.linkedin.com/in/bagashidayat/" class="text-white fw-bold">Bagas Hidayat</a></p>
   </footer>
